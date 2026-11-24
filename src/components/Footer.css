@@ -1,0 +1,112 @@
+.footer-section {
+    background: #050914;
+    color: #fff;
+    padding: 65px 7% 20px;
+    border-top: 1px solid #1c3047;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.3fr 1fr;
+    gap: 40px;
+  }
+  
+  .footer-brand h2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  
+  .footer-brand h2 span {
+    color: #00e5ff;
+  }
+  
+  .footer-edition {
+    color: #00e5ff !important;
+    font-size: 10px !important;
+    letter-spacing: 2px;
+    margin: 12px 0 !important;
+  }
+  
+  .footer-brand p {
+    color: #8f9db2;
+    font-size: 13px;
+    line-height: 1.8;
+    max-width: 280px;
+  }
+  
+  .footer-container h3 {
+    color: #00e5ff;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+  }
+  
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-links a,
+  .footer-social a {
+    color: #9ba9bd;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 13px;
+    transition: 0.3s;
+  }
+  
+  .footer-links a:hover,
+  .footer-social a:hover,
+  .footer-contact a:hover {
+    color: #00e5ff;
+    transform: translateX(4px);
+  }
+  
+  .footer-contact p {
+    color: #9ba9bd;
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  
+  .footer-contact a {
+    color: #00e5ff;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+  
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #26344a;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: #728096;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+  
+  @media (max-width: 850px) {
+    .footer-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  }

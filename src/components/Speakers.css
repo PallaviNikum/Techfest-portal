@@ -1,0 +1,145 @@
+.speakers-section {
+    padding: 90px 7%;
+    background: #080d1b;
+    color: #ffffff;
+  }
+  
+  .speakers-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+  }
+  
+  .speakers-heading span {
+    color: #00e5ff;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 700;
+  }
+  
+  .speakers-heading h2 {
+    font-size: 38px;
+    margin: 15px 0;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
+  
+  .speakers-heading p {
+    color: #9ba9bd;
+    line-height: 1.7;
+  }
+  
+  .speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .speaker-card {
+    background: #101a2d;
+    border: 1px solid #23344c;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+  
+  .speaker-card:hover {
+    transform: translateY(-8px);
+    border-color: #00e5ff;
+    box-shadow: 0 10px 30px #00e5ff20;
+  }
+  
+  .speaker-image {
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .speaker-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(30%);
+    transition: 0.4s;
+  }
+  
+  .speaker-card:hover img {
+    transform: scale(1.06);
+    filter: grayscale(0%);
+  }
+  
+  .speaker-image span {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: #00d9f5;
+    color: #07111f;
+    padding: 7px 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  
+  .speaker-info {
+    padding: 22px;
+  }
+  
+  .speaker-info h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+  }
+  
+  .speaker-info p {
+    color: #00d9f5;
+    font-size: 13px;
+  }
+  
+  @media (max-width: 768px) {
+    .speakers-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .speakers-heading h2 {
+      font-size: 28px;
+    }
+  }
+  /* SPEAKERS MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+  .speakers-section {
+    padding: 55px 5%;
+  }
+
+  .speakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .speaker-image {
+    height: 220px;
+  }
+
+  .speakers-heading h2 {
+    font-size: 30px;
+  }
+
+  .speaker-info h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .speakers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .speaker-image {
+    height: 280px;
+  }
+
+  .speakers-heading h2 {
+    font-size: 25px;
+  }
+}
